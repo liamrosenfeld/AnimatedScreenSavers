@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C9FDC19265EDCE800A569DC /* AnimatedScreenSaversView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9FDC18265EDCE800A569DC /* AnimatedScreenSaversView.h */; };
-		0C9FDC1B265EDCE800A569DC /* AnimatedScreenSaversView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC1A265EDCE800A569DC /* AnimatedScreenSaversView.m */; };
+		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
+		0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
+		0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
+		0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC2F265EE4BC00A569DC /* AppDelegate.swift */; };
+		0C9FDC34265EE4BF00A569DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC33265EE4BF00A569DC /* Assets.xcassets */; };
+		0C9FDC37265EE4BF00A569DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC36265EE4BF00A569DC /* Preview Assets.xcassets */; };
+		0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC38265EE4BF00A569DC /* Main.storyboard */; };
+		0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
+		0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedScreenSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C9FDC18265EDCE800A569DC /* AnimatedScreenSaversView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedScreenSaversView.h; sourceTree = "<group>"; };
-		0C9FDC1A265EDCE800A569DC /* AnimatedScreenSaversView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedScreenSaversView.m; sourceTree = "<group>"; };
 		0C9FDC1C265EDCE800A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedScreenSaversView.swift; sourceTree = "<group>"; };
+		0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainSceneView.swift; sourceTree = "<group>"; };
+		0C9FDC26265EE3CD00A569DC /* Terrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
+		0C9FDC2D265EE4BC00A569DC /* TesterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9FDC2F265EE4BC00A569DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C9FDC33265EE4BF00A569DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C9FDC36265EE4BF00A569DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C9FDC39265EE4BF00A569DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C9FDC3B265EE4BF00A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C9FDC3C265EE4BF00A569DC /* TesterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TesterApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C9FDC12265EDCE800A569DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C9FDC2A265EE4BC00A569DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9FDC17265EDCE800A569DC /* AnimatedScreenSavers */,
+				0C9FDC2E265EE4BC00A569DC /* TesterApp */,
 				0C9FDC16265EDCE800A569DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */,
+				0C9FDC2D265EE4BC00A569DC /* TesterApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +72,41 @@
 		0C9FDC17265EDCE800A569DC /* AnimatedScreenSavers */ = {
 			isa = PBXGroup;
 			children = (
-				0C9FDC18265EDCE800A569DC /* AnimatedScreenSaversView.h */,
-				0C9FDC1A265EDCE800A569DC /* AnimatedScreenSaversView.m */,
+				0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */,
+				0C9FDC24265EE3C100A569DC /* Terrain */,
 				0C9FDC1C265EDCE800A569DC /* Info.plist */,
 			);
 			path = AnimatedScreenSavers;
+			sourceTree = "<group>";
+		};
+		0C9FDC24265EE3C100A569DC /* Terrain */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */,
+				0C9FDC26265EE3CD00A569DC /* Terrain.swift */,
+			);
+			path = Terrain;
+			sourceTree = "<group>";
+		};
+		0C9FDC2E265EE4BC00A569DC /* TesterApp */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC2F265EE4BC00A569DC /* AppDelegate.swift */,
+				0C9FDC33265EE4BF00A569DC /* Assets.xcassets */,
+				0C9FDC38265EE4BF00A569DC /* Main.storyboard */,
+				0C9FDC3B265EE4BF00A569DC /* Info.plist */,
+				0C9FDC3C265EE4BF00A569DC /* TesterApp.entitlements */,
+				0C9FDC35265EE4BF00A569DC /* Preview Content */,
+			);
+			path = TesterApp;
+			sourceTree = "<group>";
+		};
+		0C9FDC35265EE4BF00A569DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC36265EE4BF00A569DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +116,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9FDC19265EDCE800A569DC /* AnimatedScreenSaversView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,15 +140,37 @@
 			productReference = 0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		0C9FDC2C265EE4BC00A569DC /* TesterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9FDC3D265EE4BF00A569DC /* Build configuration list for PBXNativeTarget "TesterApp" */;
+			buildPhases = (
+				0C9FDC29265EE4BC00A569DC /* Sources */,
+				0C9FDC2A265EE4BC00A569DC /* Frameworks */,
+				0C9FDC2B265EE4BC00A569DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TesterApp;
+			productName = TesterApp;
+			productReference = 0C9FDC2D265EE4BC00A569DC /* TesterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0C9FDC0C265EDCE800A569DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					0C9FDC14265EDCE800A569DC = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					0C9FDC2C265EE4BC00A569DC = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -114,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				0C9FDC14265EDCE800A569DC /* AnimatedScreenSavers */,
+				0C9FDC2C265EE4BC00A569DC /* TesterApp */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +202,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C9FDC2B265EE4BC00A569DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */,
+				0C9FDC37265EE4BF00A569DC /* Preview Assets.xcassets in Resources */,
+				0C9FDC34265EE4BF00A569DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,11 +219,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9FDC1B265EDCE800A569DC /* AnimatedScreenSaversView.m in Sources */,
+				0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */,
+				0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */,
+				0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C9FDC29265EE4BC00A569DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */,
+				0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */,
+				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C9FDC38265EE4BF00A569DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C9FDC39265EE4BF00A569DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0C9FDC1D265EDCE800A569DC /* Debug */ = {
@@ -254,13 +363,21 @@
 		0C9FDC20265EDCE800A569DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				INFOPLIST_FILE = AnimatedScreenSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,14 +385,73 @@
 		0C9FDC21265EDCE800A569DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				INFOPLIST_FILE = AnimatedScreenSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		0C9FDC3E265EE4BF00A569DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TesterApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 28V7PPHDHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TesterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0C9FDC3F265EE4BF00A569DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TesterApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 28V7PPHDHC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TesterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -296,6 +472,15 @@
 			buildConfigurations = (
 				0C9FDC20265EDCE800A569DC /* Debug */,
 				0C9FDC21265EDCE800A569DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C9FDC3D265EE4BF00A569DC /* Build configuration list for PBXNativeTarget "TesterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9FDC3E265EE4BF00A569DC /* Debug */,
+				0C9FDC3F265EE4BF00A569DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
