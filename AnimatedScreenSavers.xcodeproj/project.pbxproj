@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
 		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
 		0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
 		0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
@@ -16,6 +17,24 @@
 		0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC38265EE4BF00A569DC /* Main.storyboard */; };
 		0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
 		0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
+		0C9FDC6F265F485600A569DC /* SKScene+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */; };
+		0C9FDC70265F485600A569DC /* SKScene+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */; };
+		0C9FDC71265F485600A569DC /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC69265F485500A569DC /* Complex.swift */; };
+		0C9FDC72265F485600A569DC /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC69265F485500A569DC /* Complex.swift */; };
+		0C9FDC77265F485600A569DC /* FourierSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierSceneView.swift */; };
+		0C9FDC78265F485600A569DC /* FourierSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierSceneView.swift */; };
+		0C9FDC79265F485600A569DC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6D265F485500A569DC /* Wave.swift */; };
+		0C9FDC7A265F485600A569DC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6D265F485500A569DC /* Wave.swift */; };
+		0C9FDC7B265F485600A569DC /* FourierScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierScene.swift */; };
+		0C9FDC7C265F485600A569DC /* FourierScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierScene.swift */; };
+		0C9FDC81265F491600A569DC /* Fourier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC80265F491600A569DC /* Fourier.swift */; };
+		0C9FDC82265F491600A569DC /* Fourier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC80265F491600A569DC /* Fourier.swift */; };
+		0C9FDC84265F534C00A569DC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* Queue.swift */; };
+		0C9FDC85265F534C00A569DC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* Queue.swift */; };
+		0C9FDC87265F53A800A569DC /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC86265F53A800A569DC /* swift.json */; };
+		0C9FDC88265F53A800A569DC /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC86265F53A800A569DC /* swift.json */; };
+		0CC6EE7526601CBD0014FA8F /* treble.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6EE7426601CBD0014FA8F /* treble.json */; };
+		0CC6EE7626601CBD0014FA8F /* treble.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6EE7426601CBD0014FA8F /* treble.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +50,15 @@
 		0C9FDC39265EE4BF00A569DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C9FDC3B265EE4BF00A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9FDC3C265EE4BF00A569DC /* TesterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TesterApp.entitlements; sourceTree = "<group>"; };
+		0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKScene+Drawing.swift"; sourceTree = "<group>"; };
+		0C9FDC69265F485500A569DC /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
+		0C9FDC6C265F485500A569DC /* FourierSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierSceneView.swift; sourceTree = "<group>"; };
+		0C9FDC6D265F485500A569DC /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		0C9FDC6E265F485600A569DC /* FourierScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierScene.swift; sourceTree = "<group>"; };
+		0C9FDC80265F491600A569DC /* Fourier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourier.swift; sourceTree = "<group>"; };
+		0C9FDC83265F534C00A569DC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		0C9FDC86265F53A800A569DC /* swift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swift.json; sourceTree = "<group>"; };
+		0CC6EE7426601CBD0014FA8F /* treble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = treble.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */,
+				0C9FDC64265F475100A569DC /* Fourier */,
 				0C9FDC24265EE3C100A569DC /* Terrain */,
 				0C9FDC1C265EDCE800A569DC /* Info.plist */,
 			);
@@ -107,6 +136,54 @@
 				0C9FDC36265EE4BF00A569DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C9FDC64265F475100A569DC /* Fourier */ = {
+			isa = PBXGroup;
+			children = (
+				0CC6EE78266022080014FA8F /* View */,
+				0C9FDC67265F483E00A569DC /* Drawing */,
+				0C9FDC66265F483A00A569DC /* Math */,
+				0C9FDC65265F483200A569DC /* Paths */,
+			);
+			path = Fourier;
+			sourceTree = "<group>";
+		};
+		0C9FDC65265F483200A569DC /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC86265F53A800A569DC /* swift.json */,
+				0CC6EE7426601CBD0014FA8F /* treble.json */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		0C9FDC66265F483A00A569DC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC80265F491600A569DC /* Fourier.swift */,
+				0C9FDC69265F485500A569DC /* Complex.swift */,
+				0C9FDC6D265F485500A569DC /* Wave.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		0C9FDC67265F483E00A569DC /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC6E265F485600A569DC /* FourierScene.swift */,
+				0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		0CC6EE78266022080014FA8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FDC6C265F485500A569DC /* FourierSceneView.swift */,
+				0C9FDC83265F534C00A569DC /* Queue.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC6EE7526601CBD0014FA8F /* treble.json in Resources */,
+				0C9FDC87265F53A800A569DC /* swift.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9FDC88265F53A800A569DC /* swift.json in Resources */,
 				0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */,
+				0CC6EE7626601CBD0014FA8F /* treble.json in Resources */,
 				0C9FDC37265EE4BF00A569DC /* Preview Assets.xcassets in Resources */,
 				0C9FDC34265EE4BF00A569DC /* Assets.xcassets in Resources */,
 			);
@@ -219,9 +300,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9FDC81265F491600A569DC /* Fourier.swift in Sources */,
 				0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */,
+				0C9FDC7B265F485600A569DC /* FourierScene.swift in Sources */,
+				0C9FDC84265F534C00A569DC /* Queue.swift in Sources */,
 				0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */,
+				0C9FDC79265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */,
+				0C9FDC71265F485600A569DC /* Complex.swift in Sources */,
+				0C9FDC77265F485600A569DC /* FourierSceneView.swift in Sources */,
+				0C9FDC6F265F485600A569DC /* SKScene+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +317,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9FDC82265F491600A569DC /* Fourier.swift in Sources */,
 				0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */,
+				0C9FDC7C265F485600A569DC /* FourierScene.swift in Sources */,
+				0C9FDC85265F534C00A569DC /* Queue.swift in Sources */,
 				0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */,
+				0C9FDC7A265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
+				0C9FDC72265F485600A569DC /* Complex.swift in Sources */,
+				0C9FDC78265F485600A569DC /* FourierSceneView.swift in Sources */,
+				0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */,
+				0C9FDC70265F485600A569DC /* SKScene+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
