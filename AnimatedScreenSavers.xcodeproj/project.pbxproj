@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C446D852660AB3C00644746 /* AttractorShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D822660AB3C00644746 /* AttractorShaders.metal */; };
+		0C446D862660AB3C00644746 /* AttractorShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D822660AB3C00644746 /* AttractorShaders.metal */; };
+		0C446D8C26618BE500644746 /* AttractorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D8B26618BE500644746 /* AttractorView.swift */; };
+		0C446D8D26618BE500644746 /* AttractorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D8B26618BE500644746 /* AttractorView.swift */; };
+		0C74E31C26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
+		0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
 		0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
 		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
 		0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
@@ -38,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C446D822660AB3C00644746 /* AttractorShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AttractorShaders.metal; sourceTree = "<group>"; };
+		0C446D8B26618BE500644746 /* AttractorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorView.swift; sourceTree = "<group>"; };
+		0C74E31B26620052002A1656 /* AttractorCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorCalculator.swift; sourceTree = "<group>"; };
 		0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedScreenSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9FDC1C265EDCE800A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedScreenSaversView.swift; sourceTree = "<group>"; };
@@ -79,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C446D7D2660AB1D00644746 /* Attractor */ = {
+			isa = PBXGroup;
+			children = (
+				0C446D8B26618BE500644746 /* AttractorView.swift */,
+				0C74E31B26620052002A1656 /* AttractorCalculator.swift */,
+				0C446D822660AB3C00644746 /* AttractorShaders.metal */,
+			);
+			path = Attractor;
+			sourceTree = "<group>";
+		};
 		0C9FDC0B265EDCE800A569DC = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */,
+				0C446D7D2660AB1D00644746 /* Attractor */,
 				0C9FDC64265F475100A569DC /* Fourier */,
 				0C9FDC24265EE3C100A569DC /* Terrain */,
 				0C9FDC1C265EDCE800A569DC /* Info.plist */,
@@ -249,6 +269,7 @@
 					};
 					0C9FDC2C265EE4BC00A569DC = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -302,8 +323,11 @@
 			files = (
 				0C9FDC81265F491600A569DC /* Fourier.swift in Sources */,
 				0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */,
+				0C74E31C26620052002A1656 /* AttractorCalculator.swift in Sources */,
 				0C9FDC7B265F485600A569DC /* FourierScene.swift in Sources */,
+				0C446D8C26618BE500644746 /* AttractorView.swift in Sources */,
 				0C9FDC84265F534C00A569DC /* Queue.swift in Sources */,
+				0C446D852660AB3C00644746 /* AttractorShaders.metal in Sources */,
 				0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */,
 				0C9FDC79265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */,
@@ -320,13 +344,16 @@
 				0C9FDC82265F491600A569DC /* Fourier.swift in Sources */,
 				0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */,
 				0C9FDC7C265F485600A569DC /* FourierScene.swift in Sources */,
+				0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */,
 				0C9FDC85265F534C00A569DC /* Queue.swift in Sources */,
 				0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */,
+				0C446D862660AB3C00644746 /* AttractorShaders.metal in Sources */,
 				0C9FDC7A265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC72265F485600A569DC /* Complex.swift in Sources */,
 				0C9FDC78265F485600A569DC /* FourierSceneView.swift in Sources */,
 				0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */,
+				0C446D8D26618BE500644746 /* AttractorView.swift in Sources */,
 				0C9FDC70265F485600A569DC /* SKScene+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +499,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
@@ -494,6 +523,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
@@ -504,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -520,6 +552,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -530,6 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -546,6 +581,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};

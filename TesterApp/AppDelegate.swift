@@ -11,8 +11,8 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let frame = NSRect(x: 0, y: 0, width: 800, height: 500)
-        
+        let frame = NSRect(x: 0, y: 0, width: 1080, height: 720)
+
         // create window
         let win = NSWindow(
             contentRect: frame,
@@ -21,13 +21,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             defer: false
         )
         win.setFrameAutosaveName("Main Window")
-        
+
         // position window
         win.center()
-        
+
         // add view to window
-        win.contentView = TerrainSceneView(frame: frame)
-        
+        let animation: Animation = .attractor
+        let view: NSView = {
+            switch animation {
+            case .fourier:
+                return FourierSceneView(frame: frame)
+            case .terrain:
+                return TerrainSceneView(frame: frame)
+            case .attractor:
+                return AttractorView(frame: frame)
+            }
+        }()
+        win.contentView = view
+
         // open window
         // controllers are needed here to keep the app from crashing when a window is closed
         // if they are not used the app delegate get deallocated
