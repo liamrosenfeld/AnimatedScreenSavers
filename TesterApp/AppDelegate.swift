@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import SwiftUI
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -34,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             case .terrain:
                 return TerrainSceneView(frame: frame)
             case .attractor:
-                return AttractorView(frame: frame)
+                return NSHostingView(rootView: AttractorView())
             }
         }()
         win.contentView = view

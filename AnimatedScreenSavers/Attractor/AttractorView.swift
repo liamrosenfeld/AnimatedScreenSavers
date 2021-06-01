@@ -2,103 +2,62 @@
 //  AttractorView.swift
 //  AnimatedScreenSavers
 //
-//  Created by Liam Rosenfeld on 5/28/21.
+//  Created by Liam Rosenfeld on 5/31/21.
 //
 
-import Foundation
-import MetalKit
-import simd.vector
+import SwiftUI
 
-class AttractorView: MTKView {
-
-    // MARK: - Properties
-    private var angle: Float = 0
+struct AttractorView: View {
+    let calculator = AttractorCalculator()
     
-    private let calculator = AttractorCalculator()
-
-    private let commandQueue: MTLCommandQueue
-    private let rendererPipelineState: MTLRenderPipelineState
+    @State var attractor: Attractor = .lorenz()
+    @State var initialCondition: SIMD3<Float> = .init(0, 0, 0)
     
-    // MARK: - Init
-    required init(frame: CGRect) {
-        // set metal thin
-        let device = MTLCreateSystemDefaultDevice()!
-        commandQueue = device.makeCommandQueue()!
-        
-        // make library
-        // bundle workaround is for screen saver
-        let library = try! device.makeDefaultLibrary(bundle: Bundle(for: Self.self))
-        
-        // add shaders to pipeline
-        let pipelineDescriptor = MTLRenderPipelineDescriptor()
-        pipelineDescriptor.vertexFunction = library.makeFunction(name: "vertexShader")
-        pipelineDescriptor.fragmentFunction = library.makeFunction(name: "fragmentShader")
-        
-        // configure pipeline
-        pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
-        pipelineDescriptor.sampleCount = 1
-        
-        // make pipeline state from descriptor
-        rendererPipelineState = try! device.makeRenderPipelineState(descriptor: pipelineDescriptor)
-        
-        // set frame and device
-        super.init(
-            frame: frame,
-            device: device
-        )
+    var body: some View {
+        ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)) {
+            GeometryReader { geometry in
+                AttractorVisViewHost(calc: calculator, frame: NSRect(origin: .zero, size: geometry.size))
+            }
+            AttractorInfo(attractor: attractor, initCond: initialCondition)
+                .padding()
+        }.onReceive(calculator.newAttractor) { (attractor, initialCondition) in
+            self.attractor = attractor
+            self.initialCondition = initialCondition
+        }
+    }
+}
+
+struct AttractorInfo: View {
+    let attractor: Attractor
+    let initCond: SIMD3<Float>
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("\(attractor.name) Attractor")
+                .font(.title3)
+                .padding(0.2)
+            Text(attractor.equations)
+            Text("where")
+                .padding(0.2)
+            Text(attractor.constants)
+            Text("and")
+                .padding(0.2)
+            Text("initial condition =")
+            Text(String(format: "(%.4f, %.4f, %.4f)", initCond.x, initCond.y, initCond.z))
+        }
+        .padding()
+        .background(Color.gray.opacity(0.4))
+        .cornerRadius(5)
+    }
+}
+
+struct AttractorVisViewHost: NSViewRepresentable {
+    let calc: AttractorCalculator
+    let frame: NSRect
+    
+    func makeNSView(context: Context) -> AttractorVisView {
+        return AttractorVisView(calc: calc, frame: frame)
     }
     
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Draw
-    override func draw(_ rect: CGRect) {
-        // add next however many points
-        calculator.calcNextPoints()
-        
-        // get buffers
-        let commandBuffer = commandQueue.makeCommandBuffer()!
-        
-        let angleBuffer = device!.makeBuffer(
-            bytes: &angle,
-            length: MemoryLayout.size(ofValue: angle),
-            options: []
-        )
-        
-        let scaleBuffer = device!.makeBuffer(
-            bytes: &calculator.scale,
-            length: MemoryLayout.size(ofValue: calculator.scale),
-            options: []
-        )
-        
-        let pointBuffer = device!.makeBuffer(
-            bytesNoCopy: calculator.pointBufferPtr.baseAddress!,
-            length: calculator.bufferSize,
-            options: [],
-            deallocator: nil
-        )
-        
-        // create encoder
-        let renderPassDescriptor = self.currentRenderPassDescriptor!
-        
-        let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor)!
-        renderEncoder.setRenderPipelineState(rendererPipelineState)
-        
-        // add buffers
-        renderEncoder.setVertexBuffer(pointBuffer, offset: 0, index: 0)
-        renderEncoder.setVertexBuffer(angleBuffer, offset: 0, index: 1)
-        renderEncoder.setVertexBuffer(scaleBuffer, offset: 0, index: 2)
-        
-        // set path
-        renderEncoder.drawPrimitives(type: .lineStrip, vertexStart: 0, vertexCount: calculator.pointIndex)
-        
-        // render
-        renderEncoder.endEncoding()
-        commandBuffer.present(currentDrawable!)
-        commandBuffer.commit()
-
-        // iterate to next angle
-        angle += 0.005
-    }
+    func updateNSView(_ nsView: AttractorVisView, context: Context) { }
 }

@@ -6,6 +6,7 @@
 //
 
 import ScreenSaver
+import SwiftUI
 
 class AnimatedScreenSaversView: ScreenSaverView {
     override init?(frame: NSRect, isPreview: Bool) {
@@ -21,7 +22,9 @@ class AnimatedScreenSaversView: ScreenSaverView {
             case .terrain:
                 return TerrainSceneView(frame: normalizedFrame)
             case .attractor:
-                return AttractorView(frame: normalizedFrame)
+                let view = NSHostingView(rootView: AttractorView())
+                view.frame = normalizedFrame
+                return view
             }
         }()
         self.addSubview(view)
