@@ -27,13 +27,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         win.center()
 
         // add view to window
-        let animation: Animation = .attractor
+        let animation: Animation = .fourier
         let view: NSView = {
             switch animation {
             case .fourier:
-                return FourierSceneView(frame: frame)
-            case .terrain:
-                return TerrainSceneView(frame: frame)
+                return FourierView(frame: frame)
             case .attractor:
                 return NSHostingView(rootView: AttractorView())
             }

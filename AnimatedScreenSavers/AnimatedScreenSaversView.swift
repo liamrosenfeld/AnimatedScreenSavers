@@ -14,13 +14,11 @@ class AnimatedScreenSaversView: ScreenSaverView {
 
         let normalizedFrame = NSRect(origin: .zero, size: frame.size)
         
-        let animation: Animation = .attractor
+        let animation = Animation.allCases.randomElement()!
         let view: NSView = {
             switch animation {
             case .fourier:
-                return FourierSceneView(frame: normalizedFrame)
-            case .terrain:
-                return TerrainSceneView(frame: normalizedFrame)
+                return FourierView(frame: normalizedFrame)
             case .attractor:
                 let view = NSHostingView(rootView: AttractorView())
                 view.frame = normalizedFrame
@@ -35,8 +33,8 @@ class AnimatedScreenSaversView: ScreenSaverView {
     }
 }
 
-enum Animation {
+enum Animation: CaseIterable {
     case fourier
-    case terrain
     case attractor
+//    case terrain
 }

@@ -15,9 +15,17 @@
 		0C446D862660AB3C00644746 /* AttractorShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D822660AB3C00644746 /* AttractorShaders.metal */; };
 		0C446D8C26618BE500644746 /* AttractorVisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D8B26618BE500644746 /* AttractorVisView.swift */; };
 		0C446D8D26618BE500644746 /* AttractorVisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C446D8B26618BE500644746 /* AttractorVisView.swift */; };
+		0C4E8F5928752F82000B5490 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F5828752F82000B5490 /* heart.json */; };
+		0C4E8F5A28752F82000B5490 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F5828752F82000B5490 /* heart.json */; };
+		0C4E8F6528754A17000B5490 /* ferris.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F6428754A17000B5490 /* ferris.json */; };
+		0C4E8F6628754A17000B5490 /* ferris.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F6428754A17000B5490 /* ferris.json */; };
+		0C4E8F6B28754E0E000B5490 /* fourier.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F6A28754E0E000B5490 /* fourier.json */; };
+		0C4E8F6C28754E0E000B5490 /* fourier.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E8F6A28754E0E000B5490 /* fourier.json */; };
 		0C74E31C26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
 		0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
 		0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
+		0C9428F528794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
+		0C9428F628794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
 		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
 		0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
 		0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
@@ -27,20 +35,20 @@
 		0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC38265EE4BF00A569DC /* Main.storyboard */; };
 		0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
 		0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
-		0C9FDC6F265F485600A569DC /* SKScene+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */; };
-		0C9FDC70265F485600A569DC /* SKScene+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */; };
+		0C9FDC6F265F485600A569DC /* CALayer+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */; };
+		0C9FDC70265F485600A569DC /* CALayer+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */; };
 		0C9FDC71265F485600A569DC /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC69265F485500A569DC /* Complex.swift */; };
 		0C9FDC72265F485600A569DC /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC69265F485500A569DC /* Complex.swift */; };
-		0C9FDC77265F485600A569DC /* FourierSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierSceneView.swift */; };
-		0C9FDC78265F485600A569DC /* FourierSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierSceneView.swift */; };
+		0C9FDC77265F485600A569DC /* FourierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierView.swift */; };
+		0C9FDC78265F485600A569DC /* FourierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6C265F485500A569DC /* FourierView.swift */; };
 		0C9FDC79265F485600A569DC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6D265F485500A569DC /* Wave.swift */; };
 		0C9FDC7A265F485600A569DC /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6D265F485500A569DC /* Wave.swift */; };
-		0C9FDC7B265F485600A569DC /* FourierScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierScene.swift */; };
-		0C9FDC7C265F485600A569DC /* FourierScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierScene.swift */; };
+		0C9FDC7B265F485600A569DC /* FourierLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierLayer.swift */; };
+		0C9FDC7C265F485600A569DC /* FourierLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC6E265F485600A569DC /* FourierLayer.swift */; };
 		0C9FDC81265F491600A569DC /* Fourier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC80265F491600A569DC /* Fourier.swift */; };
 		0C9FDC82265F491600A569DC /* Fourier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC80265F491600A569DC /* Fourier.swift */; };
-		0C9FDC84265F534C00A569DC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* Queue.swift */; };
-		0C9FDC85265F534C00A569DC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* Queue.swift */; };
+		0C9FDC84265F534C00A569DC /* FourierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* FourierQueue.swift */; };
+		0C9FDC85265F534C00A569DC /* FourierQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC83265F534C00A569DC /* FourierQueue.swift */; };
 		0C9FDC87265F53A800A569DC /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC86265F53A800A569DC /* swift.json */; };
 		0C9FDC88265F53A800A569DC /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC86265F53A800A569DC /* swift.json */; };
 		0CC6EE7526601CBD0014FA8F /* treble.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6EE7426601CBD0014FA8F /* treble.json */; };
@@ -52,7 +60,11 @@
 		0C2639D32665B45300CD29C9 /* Attractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attractors.swift; sourceTree = "<group>"; };
 		0C446D822660AB3C00644746 /* AttractorShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AttractorShaders.metal; sourceTree = "<group>"; };
 		0C446D8B26618BE500644746 /* AttractorVisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorVisView.swift; sourceTree = "<group>"; };
+		0C4E8F5828752F82000B5490 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		0C4E8F6428754A17000B5490 /* ferris.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ferris.json; sourceTree = "<group>"; };
+		0C4E8F6A28754E0E000B5490 /* fourier.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourier.json; sourceTree = "<group>"; };
 		0C74E31B26620052002A1656 /* AttractorCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorCalculator.swift; sourceTree = "<group>"; };
+		0C9428F428794B9F000B15A5 /* square.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = square.json; sourceTree = "<group>"; };
 		0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedScreenSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9FDC1C265EDCE800A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedScreenSaversView.swift; sourceTree = "<group>"; };
@@ -65,13 +77,13 @@
 		0C9FDC39265EE4BF00A569DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C9FDC3B265EE4BF00A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9FDC3C265EE4BF00A569DC /* TesterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TesterApp.entitlements; sourceTree = "<group>"; };
-		0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKScene+Drawing.swift"; sourceTree = "<group>"; };
+		0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Drawing.swift"; sourceTree = "<group>"; };
 		0C9FDC69265F485500A569DC /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
-		0C9FDC6C265F485500A569DC /* FourierSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierSceneView.swift; sourceTree = "<group>"; };
+		0C9FDC6C265F485500A569DC /* FourierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierView.swift; sourceTree = "<group>"; };
 		0C9FDC6D265F485500A569DC /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
-		0C9FDC6E265F485600A569DC /* FourierScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierScene.swift; sourceTree = "<group>"; };
+		0C9FDC6E265F485600A569DC /* FourierLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourierLayer.swift; sourceTree = "<group>"; };
 		0C9FDC80265F491600A569DC /* Fourier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fourier.swift; sourceTree = "<group>"; };
-		0C9FDC83265F534C00A569DC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		0C9FDC83265F534C00A569DC /* FourierQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourierQueue.swift; sourceTree = "<group>"; };
 		0C9FDC86265F53A800A569DC /* swift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swift.json; sourceTree = "<group>"; };
 		0CC6EE7426601CBD0014FA8F /* treble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = treble.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				0CC6EE78266022080014FA8F /* View */,
-				0C9FDC67265F483E00A569DC /* Drawing */,
 				0C9FDC66265F483A00A569DC /* Math */,
 				0C9FDC65265F483200A569DC /* Paths */,
 			);
@@ -180,6 +191,10 @@
 		0C9FDC65265F483200A569DC /* Paths */ = {
 			isa = PBXGroup;
 			children = (
+				0C9428F428794B9F000B15A5 /* square.json */,
+				0C4E8F6A28754E0E000B5490 /* fourier.json */,
+				0C4E8F6428754A17000B5490 /* ferris.json */,
+				0C4E8F5828752F82000B5490 /* heart.json */,
 				0C9FDC86265F53A800A569DC /* swift.json */,
 				0CC6EE7426601CBD0014FA8F /* treble.json */,
 			);
@@ -196,20 +211,13 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
-		0C9FDC67265F483E00A569DC /* Drawing */ = {
-			isa = PBXGroup;
-			children = (
-				0C9FDC6E265F485600A569DC /* FourierScene.swift */,
-				0C9FDC68265F485500A569DC /* SKScene+Drawing.swift */,
-			);
-			path = Drawing;
-			sourceTree = "<group>";
-		};
 		0CC6EE78266022080014FA8F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0C9FDC6C265F485500A569DC /* FourierSceneView.swift */,
-				0C9FDC83265F534C00A569DC /* Queue.swift */,
+				0C9FDC6C265F485500A569DC /* FourierView.swift */,
+				0C9FDC6E265F485600A569DC /* FourierLayer.swift */,
+				0C9FDC83265F534C00A569DC /* FourierQueue.swift */,
+				0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					0C9FDC14265EDCE800A569DC = {
 						CreatedOnToolsVersion = 12.5;
@@ -305,8 +313,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4E8F6B28754E0E000B5490 /* fourier.json in Resources */,
+				0C9428F528794B9F000B15A5 /* square.json in Resources */,
 				0CC6EE7526601CBD0014FA8F /* treble.json in Resources */,
+				0C4E8F6528754A17000B5490 /* ferris.json in Resources */,
 				0C9FDC87265F53A800A569DC /* swift.json in Resources */,
+				0C4E8F5928752F82000B5490 /* heart.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,10 +326,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4E8F6C28754E0E000B5490 /* fourier.json in Resources */,
 				0C9FDC88265F53A800A569DC /* swift.json in Resources */,
 				0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */,
+				0C4E8F5A28752F82000B5490 /* heart.json in Resources */,
 				0CC6EE7626601CBD0014FA8F /* treble.json in Resources */,
 				0C9FDC37265EE4BF00A569DC /* Preview Assets.xcassets in Resources */,
+				0C4E8F6628754A17000B5490 /* ferris.json in Resources */,
+				0C9428F628794B9F000B15A5 /* square.json in Resources */,
 				0C9FDC34265EE4BF00A569DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,16 +349,16 @@
 				0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */,
 				0C74E31C26620052002A1656 /* AttractorCalculator.swift in Sources */,
 				0C2639D42665B45300CD29C9 /* Attractors.swift in Sources */,
-				0C9FDC7B265F485600A569DC /* FourierScene.swift in Sources */,
+				0C9FDC7B265F485600A569DC /* FourierLayer.swift in Sources */,
 				0C446D8C26618BE500644746 /* AttractorVisView.swift in Sources */,
-				0C9FDC84265F534C00A569DC /* Queue.swift in Sources */,
+				0C9FDC84265F534C00A569DC /* FourierQueue.swift in Sources */,
 				0C446D852660AB3C00644746 /* AttractorShaders.metal in Sources */,
 				0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */,
 				0C9FDC79265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC71265F485600A569DC /* Complex.swift in Sources */,
-				0C9FDC77265F485600A569DC /* FourierSceneView.swift in Sources */,
-				0C9FDC6F265F485600A569DC /* SKScene+Drawing.swift in Sources */,
+				0C9FDC77265F485600A569DC /* FourierView.swift in Sources */,
+				0C9FDC6F265F485600A569DC /* CALayer+Drawing.swift in Sources */,
 				0C2639D12665B20E00CD29C9 /* AttractorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,18 +371,18 @@
 				0C9FDC82265F491600A569DC /* Fourier.swift in Sources */,
 				0C2639D52665B45300CD29C9 /* Attractors.swift in Sources */,
 				0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */,
-				0C9FDC7C265F485600A569DC /* FourierScene.swift in Sources */,
+				0C9FDC7C265F485600A569DC /* FourierLayer.swift in Sources */,
 				0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */,
-				0C9FDC85265F534C00A569DC /* Queue.swift in Sources */,
+				0C9FDC85265F534C00A569DC /* FourierQueue.swift in Sources */,
 				0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */,
 				0C446D862660AB3C00644746 /* AttractorShaders.metal in Sources */,
 				0C9FDC7A265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC72265F485600A569DC /* Complex.swift in Sources */,
-				0C9FDC78265F485600A569DC /* FourierSceneView.swift in Sources */,
+				0C9FDC78265F485600A569DC /* FourierView.swift in Sources */,
 				0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */,
 				0C446D8D26618BE500644746 /* AttractorVisView.swift in Sources */,
-				0C9FDC70265F485600A569DC /* SKScene+Drawing.swift in Sources */,
+				0C9FDC70265F485600A569DC /* CALayer+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +434,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -435,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -477,6 +494,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -488,10 +506,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -501,6 +520,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				INFOPLIST_FILE = AnimatedScreenSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -509,7 +529,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -526,6 +546,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				INFOPLIST_FILE = AnimatedScreenSavers/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -534,7 +555,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.AnimatedScreenSavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -551,8 +572,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TesterApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -562,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -580,8 +603,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesterApp/TesterApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TesterApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 28V7PPHDHC;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -591,7 +616,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liamrosenfeld.TesterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
