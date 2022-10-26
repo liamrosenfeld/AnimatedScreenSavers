@@ -1,27 +1,24 @@
 //
-//  AttractorVisView.swift
+//  HilbertView.swift
 //  AnimatedScreenSavers
 //
-//  Created by Liam Rosenfeld on 5/28/21.
+//  Created by Liam Rosenfeld on 10/25/22.
 //
 
 import Foundation
 import MetalKit
 import simd.vector
 
-class AttractorVisView: MTKView {
+class HilbertView: MTKView {
     // MARK: - Properties
-    private var angle: Float = 0
-    
-    private let calculator: AttractorCalculator
-
     private let commandQueue: MTLCommandQueue
     private let rendererPipelineState: MTLRenderPipelineState
     
+    var order = 1
+    var points = 1
+    
     // MARK: - Init
-    required init(calc: AttractorCalculator, frame: CGRect) {
-        self.calculator = calc
-        
+    required init(frame: CGRect) {
         // set metal thin
         let device = MTLCreateSystemDefaultDevice()!
         commandQueue = device.makeCommandQueue()!
@@ -32,11 +29,12 @@ class AttractorVisView: MTKView {
         
         // add shaders to pipeline
         let pipelineDescriptor = MTLRenderPipelineDescriptor()
-        pipelineDescriptor.vertexFunction = library.makeFunction(name: "attractorVertexShader")
-        pipelineDescriptor.fragmentFunction = library.makeFunction(name: "attractorFragmentShader")
+        pipelineDescriptor.vertexFunction = library.makeFunction(name: "hilbertVertexShader")
+        pipelineDescriptor.fragmentFunction = library.makeFunction(name: "hilbertFragmentShader")
         
         // configure pipeline
         pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
+        pipelineDescriptor.rasterSampleCount = 4
         
         // make pipeline state from descriptor
         rendererPipelineState = try! device.makeRenderPipelineState(descriptor: pipelineDescriptor)
@@ -46,6 +44,8 @@ class AttractorVisView: MTKView {
             frame: frame,
             device: device
         )
+        
+        self.sampleCount = 4
     }
     
     required init(coder: NSCoder) {
@@ -54,31 +54,15 @@ class AttractorVisView: MTKView {
     
     // MARK: - Draw
     override func draw(_ rect: CGRect) {
-        // add next however many points
-        calculator.calcNextPoints()
-        
         // get buffers
         let commandBuffer = commandQueue.makeCommandBuffer()!
         
-        let angleBuffer = device!.makeBuffer(
-            bytes: &angle,
-            length: MemoryLayout.size(ofValue: angle),
+        let orderBuffer = device!.makeBuffer(
+            bytes: &order,
+            length: MemoryLayout.size(ofValue: order),
             options: []
         )
-        
-        let scaleBuffer = device!.makeBuffer(
-            bytes: &calculator.scale,
-            length: MemoryLayout.size(ofValue: calculator.scale),
-            options: []
-        )
-        
-        let pointBuffer = device!.makeBuffer(
-            bytesNoCopy: calculator.pointBufferPtr.baseAddress!,
-            length: calculator.bufferSize,
-            options: [],
-            deallocator: nil
-        )
-        
+
         // create encoder
         let renderPassDescriptor = self.currentRenderPassDescriptor!
         
@@ -86,23 +70,29 @@ class AttractorVisView: MTKView {
         renderEncoder.setRenderPipelineState(rendererPipelineState)
         
         // add buffers
-        renderEncoder.setVertexBuffer(pointBuffer, offset: 0, index: 0)
-        renderEncoder.setVertexBuffer(angleBuffer, offset: 0, index: 1)
-        renderEncoder.setVertexBuffer(scaleBuffer, offset: 0, index: 2)
+        renderEncoder.setVertexBuffer(orderBuffer, offset: 0, index: 0)
         
         // set path
-        renderEncoder.drawPrimitives(type: .lineStrip, vertexStart: 0, vertexCount: calculator.pointIndex)
+        renderEncoder.drawPrimitives(type: .lineStrip, vertexStart: 0, vertexCount: points)
         
         // render
         renderEncoder.endEncoding()
         commandBuffer.present(currentDrawable!)
         commandBuffer.commit()
-
-        // iterate to next angle
-        angle += 0.005
-    }
-    
-    override func viewDidMoveToWindow() {
-        calculator.reset()
+        
+        // increment
+        let maxPoints = (1 << order) * (1 << order)
+        if points == maxPoints {
+            points = 1
+            if order == 7 {
+                order = 1
+            } else {
+                order += 1
+            }
+        } else {
+            points += 1
+        }
     }
 }
+
+

@@ -23,6 +23,8 @@ class AnimatedScreenSaversView: ScreenSaverView {
                 let view = NSHostingView(rootView: AttractorView())
                 view.frame = normalizedFrame
                 return view
+            case .hilbert:
+                return SquareHilbertView(frame: normalizedFrame)
             }
         }()
         self.addSubview(view)
@@ -36,5 +38,6 @@ class AnimatedScreenSaversView: ScreenSaverView {
 enum Animation: CaseIterable {
     case fourier
     case attractor
+    case hilbert
 //    case terrain
 }

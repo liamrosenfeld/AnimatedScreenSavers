@@ -14,7 +14,7 @@ struct Vertex {
     float4 color;
 };
 
-vertex Vertex vertexShader(
+vertex Vertex attractorVertexShader(
     const device float3 *inPoints [[ buffer(0) ]],
     constant float &angle [[ buffer(1) ]],
     constant float &scale [[ buffer(2) ]],
@@ -34,6 +34,6 @@ vertex Vertex vertexShader(
     return out;
 }
 
-fragment float4 fragmentShader(Vertex in [[stage_in]]) {
+fragment float4 attractorFragmentShader(Vertex in [[stage_in]]) {
     return in.color;
 }

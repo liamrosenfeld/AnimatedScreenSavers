@@ -27,13 +27,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         win.center()
 
         // add view to window
-        let animation: Animation = .fourier
+        let animation: Animation = .hilbert
         let view: NSView = {
             switch animation {
             case .fourier:
                 return FourierView(frame: frame)
             case .attractor:
                 return NSHostingView(rootView: AttractorView())
+            case .hilbert:
+                return SquareHilbertView(frame: frame)
             }
         }()
         win.contentView = view
