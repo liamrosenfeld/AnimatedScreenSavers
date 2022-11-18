@@ -14,7 +14,7 @@ class HilbertView: MTKView {
     private let commandQueue: MTLCommandQueue
     private let rendererPipelineState: MTLRenderPipelineState
     
-    var order = 1
+    var order: UInt = 1
     var points = 1
     
     // MARK: - Init
@@ -81,16 +81,20 @@ class HilbertView: MTKView {
         commandBuffer.commit()
         
         // increment
-        let maxPoints = (1 << order) * (1 << order)
-        if points == maxPoints {
-            points = 1
-            if order == 7 {
-                order = 1
-            } else {
-                order += 1
-            }
+        if order == 7 {
+            points += 2
         } else {
             points += 1
+        }
+        
+        let maxPoints = (1 << order) * (1 << order)
+        if points > maxPoints {
+            order += 1
+            points = 1
+            
+            if order > 7 {
+                order = 1
+            }
         }
     }
 }

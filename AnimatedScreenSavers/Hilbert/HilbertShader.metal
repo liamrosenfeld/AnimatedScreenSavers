@@ -31,17 +31,17 @@ constant float2x2 transforms[] = {
              1, 0),
 };
 
-float2 hilbert(int idx, const int order) {
+float2 hilbert(uint idx, const uint order) {
     // start at origin and with identity transform
     float2 pos = float2(0, 0);
     float2x2 rot = float2x2(1, 0,
                             0, 1);
     
     // apply
-    for (int i = 0; i < order; i += 1) {
+    for (uint i = 0; i < order; i += 1) {
         // the quadrants of each step (from smallest to largest) are the last two bits.
         // get them in order of largest to smallest because we need to stack transformations
-        int quad = (idx >> ((order - i - 1) * 2)) & 3;
+        uint quad = extract_bits(idx, (order - i - 1) * 2, 2);
         
         // find the next offset
         float2 offset = rot * quadCenters[quad];
@@ -63,7 +63,7 @@ struct Vertex {
 };
 
 vertex Vertex hilbertVertexShader(
-    constant int& order [[ buffer(0) ]],
+    constant uint& order [[ buffer(0) ]],
     uint id [[vertex_id]]
 ) {
     float2 pos = hilbert(id, order);
