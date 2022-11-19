@@ -24,6 +24,10 @@
 		0C74E31C26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
 		0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74E31B26620052002A1656 /* AttractorCalculator.swift */; };
 		0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
+		0C8736E2292847760046FD41 /* MaurerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E1292847760046FD41 /* MaurerView.swift */; };
+		0C8736E3292849810046FD41 /* MaurerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E1292847760046FD41 /* MaurerView.swift */; };
+		0C8736E5292963110046FD41 /* MaurerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E4292963110046FD41 /* MaurerLayer.swift */; };
+		0C8736E62929632A0046FD41 /* MaurerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E4292963110046FD41 /* MaurerLayer.swift */; };
 		0C9428F528794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
 		0C9428F628794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
 		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
@@ -70,6 +74,8 @@
 		0C4E8F6428754A17000B5490 /* ferris.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ferris.json; sourceTree = "<group>"; };
 		0C4E8F6A28754E0E000B5490 /* fourier.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourier.json; sourceTree = "<group>"; };
 		0C74E31B26620052002A1656 /* AttractorCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorCalculator.swift; sourceTree = "<group>"; };
+		0C8736E1292847760046FD41 /* MaurerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaurerView.swift; sourceTree = "<group>"; };
+		0C8736E4292963110046FD41 /* MaurerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaurerLayer.swift; sourceTree = "<group>"; };
 		0C9428F428794B9F000B15A5 /* square.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = square.json; sourceTree = "<group>"; };
 		0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedScreenSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9FDC1C265EDCE800A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +133,15 @@
 			path = Attractor;
 			sourceTree = "<group>";
 		};
+		0C8736E0292847620046FD41 /* Maurer */ = {
+			isa = PBXGroup;
+			children = (
+				0C8736E1292847760046FD41 /* MaurerView.swift */,
+				0C8736E4292963110046FD41 /* MaurerLayer.swift */,
+			);
+			path = Maurer;
+			sourceTree = "<group>";
+		};
 		0C9FDC0B265EDCE800A569DC = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +167,7 @@
 				0C446D7D2660AB1D00644746 /* Attractor */,
 				0C9FDC64265F475100A569DC /* Fourier */,
 				0CFC6D5E2908411A00857B92 /* Hilbert */,
+				0C8736E0292847620046FD41 /* Maurer */,
 				0C9FDC24265EE3C100A569DC /* Terrain */,
 				0C9FDC1C265EDCE800A569DC /* Info.plist */,
 			);
@@ -366,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFC6D662908CE6F00857B92 /* SquareHilbertView.swift in Sources */,
+				0C8736E5292963110046FD41 /* MaurerLayer.swift in Sources */,
 				0C9FDC81265F491600A569DC /* Fourier.swift in Sources */,
 				0CFC6D632908418A00857B92 /* HilbertShader.metal in Sources */,
 				0CFC6D602908416500857B92 /* HilbertView.swift in Sources */,
@@ -383,6 +400,7 @@
 				0C9FDC77265F485600A569DC /* FourierView.swift in Sources */,
 				0C9FDC6F265F485600A569DC /* CALayer+Drawing.swift in Sources */,
 				0C2639D12665B20E00CD29C9 /* AttractorView.swift in Sources */,
+				0C8736E2292847760046FD41 /* MaurerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +422,12 @@
 				0C9FDC7A265F485600A569DC /* Wave.swift in Sources */,
 				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC72265F485600A569DC /* Complex.swift in Sources */,
+				0C8736E62929632A0046FD41 /* MaurerLayer.swift in Sources */,
 				0CFC6D642908418A00857B92 /* HilbertShader.metal in Sources */,
 				0C9FDC78265F485600A569DC /* FourierView.swift in Sources */,
 				0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */,
 				0C446D8D26618BE500644746 /* AttractorVisView.swift in Sources */,
+				0C8736E3292849810046FD41 /* MaurerView.swift in Sources */,
 				0C9FDC70265F485600A569DC /* CALayer+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
