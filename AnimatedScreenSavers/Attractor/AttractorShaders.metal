@@ -22,11 +22,13 @@ vertex Vertex attractorVertexShader(
 ) {
     Vertex out;
 
-    float3 thisPoint = inPoints[id];
-
-    float x = ((thisPoint.x * sin(angle)) + (thisPoint.z * cos(angle))) * scale;
-    float y = thisPoint.y * scale;
-    out.position = float4(x, y, 0.0, 1.0);
+    // rotate about y axis and scale down
+    float3 pt = inPoints[id];
+    float3x3 rot = float3x3(cos(angle), 0, sin(angle),
+                                     0, 1,          0,
+                           -sin(angle), 0, cos(angle));
+    pt = rot * pt * scale;
+    out.position = float4(pt.x, pt.y, pt.z / 4 + 0.5, 1.0);
     
     float percentDone = float(id) / 16384;
     out.color = float4(percentDone, 1.0, 1.0 - percentDone, 1.0);
