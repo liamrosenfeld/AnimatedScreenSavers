@@ -6,3 +6,4 @@ A collection of programmatic animations I made for fun ported into screensavers
 - Plots chaotic attractors (using metal)
 - Draws pseudo hilbert curves (using metal)
 - Draws maurer roses (using core animation)
+- Draws perlin noise terrain meshes (using metal)

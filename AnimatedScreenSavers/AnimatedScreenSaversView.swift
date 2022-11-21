@@ -27,6 +27,8 @@ class AnimatedScreenSaversView: ScreenSaverView {
                 return SquareHilbertView(frame: normalizedFrame)
             case .maurer:
                 return MaurerView(frame: normalizedFrame)
+            case .perlin:
+                return PerlinView(frame: normalizedFrame)
             }
         }()
         self.addSubview(view)
@@ -42,5 +44,5 @@ enum Animation: CaseIterable {
     case attractor
     case hilbert
     case maurer
-//    case terrain
+    case perlin
 }

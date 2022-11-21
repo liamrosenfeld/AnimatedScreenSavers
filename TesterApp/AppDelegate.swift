@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         win.center()
 
         // add view to window
-        let animation: Animation = .maurer
+        let animation: Animation = .perlin
         let view: NSView = {
             switch animation {
             case .fourier:
@@ -38,6 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 return SquareHilbertView(frame: frame)
             case .maurer:
                 return MaurerView(frame: frame)
+            case .perlin:
+                return PerlinView(frame: frame)
             }
         }()
         win.contentView = view

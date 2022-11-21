@@ -28,17 +28,19 @@
 		0C8736E3292849810046FD41 /* MaurerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E1292847760046FD41 /* MaurerView.swift */; };
 		0C8736E5292963110046FD41 /* MaurerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E4292963110046FD41 /* MaurerLayer.swift */; };
 		0C8736E62929632A0046FD41 /* MaurerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E4292963110046FD41 /* MaurerLayer.swift */; };
+		0C8736E829299D870046FD41 /* PerlinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E729299D870046FD41 /* PerlinView.swift */; };
+		0C8736E929299D870046FD41 /* PerlinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736E729299D870046FD41 /* PerlinView.swift */; };
+		0C8736EB2929A34E0046FD41 /* PerlinShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736EA2929A34E0046FD41 /* PerlinShaders.metal */; };
+		0C8736EC2929A34E0046FD41 /* PerlinShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C8736EA2929A34E0046FD41 /* PerlinShaders.metal */; };
 		0C9428F528794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
 		0C9428F628794B9F000B15A5 /* square.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C9428F428794B9F000B15A5 /* square.json */; };
+		0C9AD4D0292AF2E40095D5D4 /* PerlinTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AD4CF292AF2E40095D5D4 /* PerlinTexture.swift */; };
+		0C9AD4D1292AF2F80095D5D4 /* PerlinTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AD4CF292AF2E40095D5D4 /* PerlinTexture.swift */; };
 		0C9FDC23265EE39000A569DC /* AnimatedScreenSaversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */; };
-		0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
-		0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
 		0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC2F265EE4BC00A569DC /* AppDelegate.swift */; };
 		0C9FDC34265EE4BF00A569DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC33265EE4BF00A569DC /* Assets.xcassets */; };
 		0C9FDC37265EE4BF00A569DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC36265EE4BF00A569DC /* Preview Assets.xcassets */; };
 		0C9FDC3A265EE4BF00A569DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FDC38265EE4BF00A569DC /* Main.storyboard */; };
-		0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */; };
-		0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC26265EE3CD00A569DC /* Terrain.swift */; };
 		0C9FDC6F265F485600A569DC /* CALayer+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */; };
 		0C9FDC70265F485600A569DC /* CALayer+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC68265F485500A569DC /* CALayer+Drawing.swift */; };
 		0C9FDC71265F485600A569DC /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FDC69265F485500A569DC /* Complex.swift */; };
@@ -76,12 +78,13 @@
 		0C74E31B26620052002A1656 /* AttractorCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractorCalculator.swift; sourceTree = "<group>"; };
 		0C8736E1292847760046FD41 /* MaurerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaurerView.swift; sourceTree = "<group>"; };
 		0C8736E4292963110046FD41 /* MaurerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaurerLayer.swift; sourceTree = "<group>"; };
+		0C8736E729299D870046FD41 /* PerlinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinView.swift; sourceTree = "<group>"; };
+		0C8736EA2929A34E0046FD41 /* PerlinShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PerlinShaders.metal; sourceTree = "<group>"; };
 		0C9428F428794B9F000B15A5 /* square.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = square.json; sourceTree = "<group>"; };
+		0C9AD4CF292AF2E40095D5D4 /* PerlinTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinTexture.swift; sourceTree = "<group>"; };
 		0C9FDC15265EDCE800A569DC /* AnimatedScreenSavers.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedScreenSavers.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9FDC1C265EDCE800A569DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C9FDC22265EE39000A569DC /* AnimatedScreenSaversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedScreenSaversView.swift; sourceTree = "<group>"; };
-		0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainSceneView.swift; sourceTree = "<group>"; };
-		0C9FDC26265EE3CD00A569DC /* Terrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
 		0C9FDC2D265EE4BC00A569DC /* TesterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9FDC2F265EE4BC00A569DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9FDC33265EE4BF00A569DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,19 +171,20 @@
 				0C9FDC64265F475100A569DC /* Fourier */,
 				0CFC6D5E2908411A00857B92 /* Hilbert */,
 				0C8736E0292847620046FD41 /* Maurer */,
-				0C9FDC24265EE3C100A569DC /* Terrain */,
+				0C9FDC24265EE3C100A569DC /* Perlin */,
 				0C9FDC1C265EDCE800A569DC /* Info.plist */,
 			);
 			path = AnimatedScreenSavers;
 			sourceTree = "<group>";
 		};
-		0C9FDC24265EE3C100A569DC /* Terrain */ = {
+		0C9FDC24265EE3C100A569DC /* Perlin */ = {
 			isa = PBXGroup;
 			children = (
-				0C9FDC25265EE3CD00A569DC /* TerrainSceneView.swift */,
-				0C9FDC26265EE3CD00A569DC /* Terrain.swift */,
+				0C8736E729299D870046FD41 /* PerlinView.swift */,
+				0C9AD4CF292AF2E40095D5D4 /* PerlinTexture.swift */,
+				0C8736EA2929A34E0046FD41 /* PerlinShaders.metal */,
 			);
-			path = Terrain;
+			path = Perlin;
 			sourceTree = "<group>";
 		};
 		0C9FDC2E265EE4BC00A569DC /* TesterApp */ = {
@@ -381,6 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8736E829299D870046FD41 /* PerlinView.swift in Sources */,
+				0C9AD4D0292AF2E40095D5D4 /* PerlinTexture.swift in Sources */,
 				0CFC6D662908CE6F00857B92 /* SquareHilbertView.swift in Sources */,
 				0C8736E5292963110046FD41 /* MaurerLayer.swift in Sources */,
 				0C9FDC81265F491600A569DC /* Fourier.swift in Sources */,
@@ -393,9 +399,8 @@
 				0C446D8C26618BE500644746 /* AttractorVisView.swift in Sources */,
 				0C9FDC84265F534C00A569DC /* FourierQueue.swift in Sources */,
 				0C446D852660AB3C00644746 /* AttractorShaders.metal in Sources */,
-				0C9FDC28265EE3CD00A569DC /* Terrain.swift in Sources */,
+				0C8736EB2929A34E0046FD41 /* PerlinShaders.metal in Sources */,
 				0C9FDC79265F485600A569DC /* Wave.swift in Sources */,
-				0C9FDC27265EE3CD00A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC71265F485600A569DC /* Complex.swift in Sources */,
 				0C9FDC77265F485600A569DC /* FourierView.swift in Sources */,
 				0C9FDC6F265F485600A569DC /* CALayer+Drawing.swift in Sources */,
@@ -414,13 +419,13 @@
 				0C2639D52665B45300CD29C9 /* Attractors.swift in Sources */,
 				0C9FDC30265EE4BC00A569DC /* AppDelegate.swift in Sources */,
 				0C9FDC7C265F485600A569DC /* FourierLayer.swift in Sources */,
+				0C8736EC2929A34E0046FD41 /* PerlinShaders.metal in Sources */,
 				0C74E31D26620052002A1656 /* AttractorCalculator.swift in Sources */,
 				0CFC6D672908CE6F00857B92 /* SquareHilbertView.swift in Sources */,
+				0C9AD4D1292AF2F80095D5D4 /* PerlinTexture.swift in Sources */,
 				0C9FDC85265F534C00A569DC /* FourierQueue.swift in Sources */,
-				0C9FDC41265EE4D900A569DC /* Terrain.swift in Sources */,
 				0C446D862660AB3C00644746 /* AttractorShaders.metal in Sources */,
 				0C9FDC7A265F485600A569DC /* Wave.swift in Sources */,
-				0C9FDC40265EE4D900A569DC /* TerrainSceneView.swift in Sources */,
 				0C9FDC72265F485600A569DC /* Complex.swift in Sources */,
 				0C8736E62929632A0046FD41 /* MaurerLayer.swift in Sources */,
 				0CFC6D642908418A00857B92 /* HilbertShader.metal in Sources */,
@@ -428,6 +433,7 @@
 				0C7BE6A926604AAA002B9AB3 /* AnimatedScreenSaversView.swift in Sources */,
 				0C446D8D26618BE500644746 /* AttractorVisView.swift in Sources */,
 				0C8736E3292849810046FD41 /* MaurerView.swift in Sources */,
+				0C8736E929299D870046FD41 /* PerlinView.swift in Sources */,
 				0C9FDC70265F485600A569DC /* CALayer+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
