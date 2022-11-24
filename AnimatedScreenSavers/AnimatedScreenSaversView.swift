@@ -14,7 +14,16 @@ class AnimatedScreenSaversView: ScreenSaverView {
 
         let normalizedFrame = NSRect(origin: .zero, size: frame.size)
         
-        let animation = Animation.allCases.randomElement()!
+        let animation: Animation = {
+            if frame.width < 100 {
+                // override normal settings if preview (to look good small)
+                return .perlin
+            } else {
+                // pick random enabled animation
+                return SettingsStore.loadFromFile().animations.toSet().randomElement() ?? .attractor
+            }
+        }()
+        
         let view: NSView = {
             switch animation {
             case .fourier:
@@ -37,12 +46,21 @@ class AnimatedScreenSaversView: ScreenSaverView {
     required init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
-
-enum Animation: CaseIterable {
-    case fourier
-    case attractor
-    case hilbert
-    case maurer
-    case perlin
+    
+    // MARK: - Settings
+    override var hasConfigureSheet: Bool {
+        return true
+    }
+    
+    override var configureSheet: NSWindow? {
+        let window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 300, height: 360),
+            styleMask: [.titled, .fullSizeContentView, .utilityWindow],
+            backing: .buffered, defer: false)
+        window.center()
+        window.setFrameAutosaveName("Settings")
+        let view = NSHostingView(rootView: SettingsView(window: window).padding())
+        window.contentView = view
+        return window
+    }
 }
