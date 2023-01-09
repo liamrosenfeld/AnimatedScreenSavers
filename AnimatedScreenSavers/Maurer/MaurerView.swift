@@ -7,35 +7,47 @@
 
 import AppKit
 
-typealias MaurerConfig = (n: Int, d: Int)
+struct MaurerConfig {
+    var n: Int
+    var d: Int
+    
+    /// find a random rose that looks decent
+    static func random() -> MaurerConfig {
+        while true {
+            let n = Int.random(in: 2...35)
+            let d = goodJumpAmounts.randomElement()!
+            
+            // my arbitrary conditions for pretty looking roses
+            let a = (max(n, d) % min(n, d)) == 1
+            let b = abs(n - d) > 10
+
+            // trim the rose bush
+            if a && b {
+                return MaurerConfig(n: n, d: d)
+            }
+        }
+    }
+    
+    private static let goodJumpAmounts = (15...70).filter { d in
+        // check that it moves by a notable amount
+        let offsetPerCycle = Int(ceil(360 / Float(d))) * d - 360
+        if offsetPerCycle < 10 {
+            return false
+        }
+        
+        // check that it does not loop back to 0
+        for i in 1..<360 {
+            if (i * d) % 360 == 0 {
+                return false
+            }
+        }
+        
+        return true
+    }
+}
 
 class MaurerView: NSView {
     let maurerLayer = MaurerLayer()
-    
-    let roses: [MaurerConfig] = [
-        (n: 2, d: 19),
-        (n: 2, d: 31),
-        (n: 2, d: 39),
-        (n: 2, d: 41),
-        (n: 2, d: 47),
-        (n: 3, d: 47),
-        (n: 3, d: 67),
-        (n: 4, d: 31),
-        (n: 4, d: 61),
-        (n: 5, d: 31),
-        (n: 5, d: 97),
-        (n: 6, d: 31),
-        (n: 6, d: 71),
-        (n: 7, d: 19),
-        (n: 8, d: 19),
-        (n: 8, d: 19),
-        (n: 22, d: 31),
-        (n: 26, d: 37),
-        (n: 36, d: 47),
-        (n: 40, d: 37),
-        (n: 44, d: 31),
-        (n: 44, d: 34),
-    ]
     
     var runloop: Task<Never, Never>?
     
@@ -55,7 +67,7 @@ class MaurerView: NSView {
         // run
         runloop = Task {
             while true {
-                await self.maurerLayer.play(roses.randomElement()!)
+                await self.maurerLayer.play(MaurerConfig.random())
             }
         }
     }
